@@ -8,7 +8,7 @@ Clone repository and inside project folder type:
 
 $ npm i
 
-## Start with webpack-dev-server
+## Start
 Run $ npm start to see the example app at http://localhost:8080
 
 ## Template
