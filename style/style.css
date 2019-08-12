@@ -1,0 +1,193 @@
+/* clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+/* resets */
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.error{
+    color: #cc553b;
+    margin-top: 5px;
+}
+.done{
+    color: #3bcc96;
+    margin-top: 5px;
+}
+.noPaddingRight{
+    padding-right: 0!important;
+}
+.red{
+    color: red;
+    font-weight: 500;
+}
+.noPadding{
+    padding: 0!important;
+}
+input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+button{
+    border : 1px solid #f5f5f5;
+}
+button:disabled{
+    border: none;
+    color: #444;
+    box-shadow: inset 0px 0px 6px 3px #333;
+    cursor: not-allowed!important;
+}
+/* machine */
+.machine-wrap{
+    position: relative;
+    width: 700px;
+    margin: 50px auto ;
+    background: #214a56;
+    height: 700px;
+    padding: 30px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+.machine-wrap:before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 16px;
+    bottom: 130px;
+    left: 50%;
+    margin: 0 -40px;
+    border-radius: 8px;
+    background: #214a56;
+    z-index: 9;
+}
+.machine-wrap:after {
+    content: '';
+    height: 130px;
+    border-radius: 6px;
+    box-shadow: 0 4px 0 0 #6693a0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25px;
+    background: #3e6a77;
+    width: 91%;
+    margin: 0 auto;
+}
+
+.machine-products{
+    background: #191f2a;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 20px;
+    height: 495px;
+}
+.machine-products li{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    margin-bottom: 55px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #555;
+}
+.machine-products li.outofstock{
+    opacity: .4;
+}
+.machine-products li span{
+    display: block;
+    color: #fff;
+    font-size: 13px;
+}
+.machine-products li .shape{
+    margin: 0 auto;
+    display: block;
+    width: 85px;
+    height: 85px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #4f74af;
+}
+.machine-products li .name{
+    font-size: 16px;
+    margin-top: -70px;
+    color: #000;
+}
+.machine-products li .price{
+    margin-right: 10px;
+}
+.machine-products .buyP span{
+    display: inline-block;
+}
+.machine-products li:last-child{
+    margin-bottom: 0;
+}
+.machine-keypad ul {
+    display: inline-block;
+    text-align: center;
+    margin: 20px 0 30px;
+}
+.machine-keypad ul li{
+    display: inline-block;
+}
+.machine-keypad ul button{
+    margin: 20px 5px 5px 5px;
+    width: 50px;
+    height: 50px;
+    background: #555555;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+}
+.machine-keypad ul button:disabled{
+    color: #333;
+}
+.machine-display .display{
+    width: 100%;
+    height: 150px;
+    background: #ffffcc;
+    padding: 15px 10px;
+    margin-bottom: 30px;
+}
+.machine-display span{
+    display: block;
+    font-size: 12px;
+}
+.machine-display .insert{
+    background: #3bcc96;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    font-size: 13px;
+}
+.machine-display .addCredit{
+    font-size: 13px;
+    height: 30px;
+    padding-left: 10px;
+}
+.machine-keypad .buttons button{
+    float: left;
+    width: 45%;
+    background: #cc553b;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    font-size: 13px;
+}
+.machine-keypad .buttons button:last-child{
+    margin-left: 5%;
+    background: #3bcc96;
+}
